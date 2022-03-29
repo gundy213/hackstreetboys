@@ -1,0 +1,632 @@
+/* ------------------ General CSS ------------------ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #ffffff;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+.grid-title:first-child {
+    margin-top: 15px;
+}
+
+.grid-title h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #757575;
+}
+
+
+/* -------------- Product Grid Style --------------- */
+.product-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-grid .product-item {
+    width: 25%;
+    padding: 15px;
+}
+
+@media (max-width: 992px) {
+    .product-grid .product-item {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid .product-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid .product-item {
+        width: 100%;
+    }
+}
+
+.product-grid .product-single {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-grid .product-img,
+.product-grid .product-content {
+    position: relative;
+    width: 100%;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.product-grid .product-img img {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+
+
+/* --- Product Grid 1 --- */
+.product-grid.grid-1 .product-single:hover {
+    box-shadow: 0 0 5px #999999;
+}
+
+.product-grid.grid-1 .product-single:hover img {
+    transform: scale(1.1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.product-grid.grid-1 .product-status {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.product-grid.grid-1 .product-status span:first-child {
+    display: inline-block;
+    float: left;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #1dbf71;
+    opacity: .8;
+}
+
+.product-grid.grid-1 .product-status span:last-child {
+    display: inline-block;
+    float: right;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #ee0000;
+    opacity: .8;
+}
+
+.product-grid.grid-1 .product-action {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 20px);
+    font-size: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.product-grid.grid-1 .product-action a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px 0;
+    margin: 0 2px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #1dbf71;
+}
+
+.product-grid.grid-1 .product-action a:hover {
+    background: #252525;
+}
+
+
+.product-grid.grid-1 .product-single:hover .product-action {
+    opacity: 1;
+}
+
+.product-grid.grid-1 .product-content {
+    padding: 15px;
+}
+
+.product-grid.grid-1 .product-title,
+.product-grid.grid-1 .product-ratting,
+.product-grid.grid-1 .product-price {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.product-grid.grid-1 .product-price {
+    margin-bottom: 0;
+}
+
+.product-grid.grid-1 .product-title h2 {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.product-grid.grid-1 .product-title h2 a {
+    color: #1dbf71;
+}
+
+.product-grid.grid-1 .product-title h2 a:hover {
+    color: #666666;
+}
+
+.product-grid.grid-1 .product-ratting i {
+    display: inline-block;
+    font-size: 16px;
+    color: #1dbf71;
+}
+
+.product-grid.grid-1 .product-price h2 {
+    display: inline-block;
+    color: #1dbf71;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.product-grid.grid-1 .product-price h2:last-child {
+    margin-left: 10px;
+    color: #666666;
+    text-decoration: line-through;
+}
+
+
+/* --- Product Grid 2 --- */
+.product-grid.grid-2 .product-single {
+    border-radius: 5px;
+}
+
+.product-grid.grid-2 .product-single:hover {
+    box-shadow: 0 0 10px #999999;
+}
+
+.product-grid.grid-2 .product-single:hover img {
+    transform: scale(1.1);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.product-grid.grid-2 .product-status {
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    left: 0;
+}
+
+.product-grid.grid-2 .product-status span:first-child {
+    display: inline-block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #1dbf71;
+    border-radius: 45px;
+    opacity: .8;
+}
+
+.product-grid.grid-2 .product-status span:last-child {
+    display: inline-block;
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #ee0000;
+    border-radius: 45px;
+    opacity: .8;
+}
+
+.product-grid.grid-2 .product-action {
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 20px);
+    font-size: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.product-grid.grid-2 .product-action a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    padding: 11px 0;
+    margin: 0 2px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #D69C2F;
+    border-radius: 40px;
+}
+
+.product-grid.grid-2 .product-action a:hover {
+    background: #252525;
+}
+
+
+.product-grid.grid-2 .product-single:hover .product-action {
+    opacity: 1;
+}
+
+.product-grid.grid-2 .product-content {
+    padding: 15px;
+    border: 1px solid;
+    border-color: transparent #eeeeee #eeeeee #eeeeee;
+    border-radius: 0 0 5px 5px;
+    background: #f7f7f7;
+}
+
+.product-grid.grid-2 .product-title,
+.product-grid.grid-2 .product-ratting,
+.product-grid.grid-2 .product-price {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.product-grid.grid-2 .product-price {
+    margin-bottom: 0;
+}
+
+.product-grid.grid-2 .product-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-grid.grid-2 .product-title h2 a {
+    color: #666666;
+}
+
+.product-grid.grid-2 .product-title h2 a:hover {
+    color: #666666;
+}
+
+.product-grid.grid-2 .product-ratting i {
+    display: inline-block;
+    font-size: 16px;
+    color: #D69C2F;
+}
+
+.product-grid.grid-2 .product-price h2 {
+    display: inline-block;
+    color: #666666;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.product-grid.grid-2 .product-price h2:last-child {
+    margin-left: 10px;
+    color: #666666;
+    font-weight: 200;
+    text-decoration: line-through;
+}
+
+
+/* --- Product Grid 3 --- */
+.product-grid.grid-3 .product-single:hover {
+    box-shadow: 0 0 6px #999999;
+}
+
+.product-grid.grid-3 .product-single:hover img {
+    transform: scale(1.1);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.product-grid.grid-3 .product-price {
+    position: absolute;
+    width: 100%;
+    top: -50px;
+}
+
+.product-grid.grid-3 .product-price span:first-child {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    padding: 60px 0 0 55px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #1dbf71;
+    border-radius: 100px;
+}
+
+.product-grid.grid-3 .product-price span:last-child {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-right: -50px;
+    padding: 60px 0 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #ee0000;
+    border-radius: 100px;
+}
+
+.product-grid.grid-3 .product-content {
+    padding: 15px 0 0 0;
+    background: #f1f1f1;
+}
+
+.product-grid.grid-3 .product-title,
+.product-grid.grid-3 .product-ratting {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-grid.grid-3 .product-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-grid.grid-3 .product-title h2 a {
+    color: #666666;
+}
+
+.product-grid.grid-3 .product-title h2 a:hover {
+    color: #666666;
+}
+
+.product-grid.grid-3 .product-ratting i {
+    display: inline-block;
+    font-size: 16px;
+    color: #FF6F61;
+}
+
+.product-grid.grid-3 .product-action {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    transition: .3s;
+}
+
+.product-grid.grid-3 .product-action a {
+    display: inline-block;
+    width: calc(50% - 1px);
+    height: 40px;
+    padding: 13px 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #FF6F61;
+}
+
+.product-grid.grid-3 .product-action a:first-child {
+    margin-right: 2px;
+}
+
+.product-grid.grid-3 .product-action a i {
+    margin-right: 3px;
+}
+
+.product-grid.grid-3 .product-action a:hover {
+    background: #252525;
+}
+
+
+/* --- Product Grid 4 --- */
+.product-grid.grid-4 .product-single:hover {
+    box-shadow: 0 0 6px #999999;
+}
+
+.product-grid.grid-4 .product-single:hover img {
+    transform: scale(1.1);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.product-grid.grid-4 .product-status {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.product-grid.grid-4 .product-status span:first-child {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 30px;
+    margin-left: -50px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #1dbf71;
+    transition: .2s;
+}
+
+.product-grid.grid-4 .product-status span:last-child {
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 30px;
+    margin-right: -50px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #ee0000;
+    transition: .2s;
+}
+
+.product-grid.grid-4 .product-single:hover .product-status span:first-child {
+    margin-left: 0px;
+}
+
+.product-grid.grid-4 .product-single:hover .product-status span:last-child {
+    margin-right: 0px;
+}
+
+.product-grid.grid-4 .product-price {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    padding: 30px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    background: #935529;
+    border-radius: 100px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.product-grid.grid-4 .product-single:hover .product-price {
+    opacity: 1;
+}
+
+.product-grid.grid-4 .product-action {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+}
+
+.product-grid.grid-4 .product-action a {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #935529;
+    transition: .2s;
+}
+
+.product-grid.grid-4 .product-action a i {
+    margin-right: 3px;
+}
+
+.product-grid.grid-4 .product-action a:hover {
+    background: #252525;
+}
+
+.product-grid.grid-4 .product-action a:first-child {
+    float: left;
+    margin-left: -100%;
+}
+
+.product-grid.grid-4 .product-action a:last-child {
+    float: right;
+    margin-right: -100%;
+}
+
+.product-grid.grid-4 .product-single:hover .product-action a:first-child {
+    margin-left: 0;
+}
+
+.product-grid.grid-4 .product-single:hover .product-action a:last-child {
+    margin-right: 0;
+}
+
+.product-grid.grid-4 .product-content {
+    padding: 15px;
+    text-align: center;
+    background: #f7f7f7;;
+}
+
+.product-grid.grid-4 .product-title,
+.product-grid.grid-4 .product-ratting {
+    width: 100%;
+    text-align: center;
+}
+
+.product-grid.grid-4 .product-title {
+    margin-bottom: 10px;
+}
+
+.product-grid.grid-4 .product-title h2 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.product-grid.grid-4 .product-title h2 a {
+    color: #935529;
+}
+
+.product-grid.grid-4 .product-title h2 a:hover {
+    color: #252525;
+}
+
+.product-grid.grid-4 .product-ratting i {
+    display: inline-block;
+    font-size: 16px;
+    color: #935529;
+}
