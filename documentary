@@ -1,9 +1,3 @@
-<video id="video" poster="preview.png" controls width="480" height="360">  
-<source src="https://www.youtube.com/watch?v=TEni7XXkDh4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>  
-<source src="https://www.youtube.com/watch?v=TEni7XXkDh4" type='video/webm; codecs="vp8, vorbis"'>  
-<source src="https://www.youtube.com/watch?v=TEni7XXkDh4" type='video/ogg; codecs="theora, vorbis"'>  
-<!-- Use Flash if above video formats not supported -->  
-<object width="480" height="360" type="application/x-shockwaveash" data="sample.swf"> 
-<param name="movie" value="sample.swf">  <param name="ashvars" value="controlbar=over&amp;image=preview.png&amp;le=https://www.youtube.com/watch?v=TEni7XXkDh4"> 
-<img src="preview.jpg" width="480" height="360" title="video not supported">  </object>  </video> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TEni7XXkDh4" title="Why Companies Use Employee Monitoring Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
