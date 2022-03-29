@@ -1,6 +1,7 @@
 "use strict";
 
 //some function here
-let getDate = () => {
-    document.write(new Date().getFullYear());
-}
+document.getElementById("year").innerHTML = new Date().getFullYear();    
+
+
+ 
