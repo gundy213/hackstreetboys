@@ -26,7 +26,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <body>
 
 <!-- Navbar -->
-<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">Frontend Bootcamp</a>
@@ -43,7 +42,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">What Y When How Learn</a>
+              <a href="index" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#questions" class="nav-link">gfdhjkgfdjk</a>
