@@ -25,9 +25,10 @@ input[type=submit]:hover {
 }
 
 /* Style the container/contact section */
-.container {
+.contact {
+  margin-top: 25px;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 10px;
 }
 
@@ -51,5 +52,6 @@ input[type=submit]:hover {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
+    margin-bottom: 15px;
   }
 }
