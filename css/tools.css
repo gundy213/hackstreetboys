@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+  }
+  /*Margins*/
+  .Page-layout{
+      margin: auto;
+      width: 50%;
+      
+        padding: 30px, 10px, 60px;
+  }
+  .tools{
+      padding-top: 50px;
+  }
+  .Axis-img{
+      width: 50px;
+        height: 50px;
+  }
+  
