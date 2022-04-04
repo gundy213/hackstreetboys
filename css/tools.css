@@ -14,25 +14,5 @@
   footer{
     padding-top: 50px;
 
-  }
-      .column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
+  
   
