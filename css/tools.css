@@ -4,11 +4,12 @@
   /*Margins*/
   .Page-layout{
       margin: auto;
-      width: 100%;
+      width: 75%;
       padding: 30px, 10px, 100px;
   }
   .tools{
       padding-top: 75px;
+      padding-right: 10px;
 }
   footer{
     padding-top: 50px;
