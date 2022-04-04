@@ -9,12 +9,17 @@
   }
   .tools{
       padding-top: 75px;
-  }
-  .Axis-img{
-    max-width: 50%;
-  }
+ 
   
   footer{
     padding-top: 50px;
+
+  }
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   
