@@ -17,6 +17,7 @@ const theme = document.querySelector("#theme-link");
 
 // Listen for a click on the button
 btn.addEventListener("click", function() {
+   alert("Button works");
   // If the current URL contains "css/lightTheme.css"
   if (theme.getAttribute("href") == "css/lightTheme.css") {
     // ... then switch it to "css/darkTheme.css"
