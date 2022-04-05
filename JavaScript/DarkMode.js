@@ -17,4 +17,4 @@ btn.addEventListener("click", function() {
     // ... switch it to "css/lightTheme.css"
     theme.href = "css/lightTheme.css";
   }
-}
+})
