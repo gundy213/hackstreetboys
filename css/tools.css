@@ -4,22 +4,15 @@
   /*Margins*/
   .Page-layout{
       margin: auto;
-      width: 50%;
+      width: 75%;
       padding: 30px, 10px, 100px;
   }
   .tools{
       padding-top: 75px;
- 
-  
+      padding-right: 10px;
+}
   footer{
     padding-top: 50px;
-
-  }
-
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
+}
+  
   
