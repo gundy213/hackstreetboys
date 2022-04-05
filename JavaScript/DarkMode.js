@@ -1,5 +1,5 @@
 // Select the button
-use strict;
+"use strict";
 
 const btn = document.querySelector(".btn-toggle");
 // Select the stylesheet <link>
