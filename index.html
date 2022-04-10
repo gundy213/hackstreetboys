@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Employee Monitoring</title>
-  <link rel="icon" type="image/png" href="images/empmon.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="JavaScript/getDate.js"></script>
+	<title>Employee Monitoring</title>
+	<link rel="icon" type="image/png" href="images/empmon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<script src="JavaScript/functions.js"></script>
 </head>
 <body>
 
-<!-- Main content -->
-<div class = "home">
-	<img class="home icon" src="images/empmon.png" alt="CCTV Camera" width="500" height="500">
-	<h1> Employee Monitoring</h1>
-	<p>Learn about all aspects of employee monitoring</p>
-	<form action="page1.html">
-    <input type="submit" value="Learn More" />
-	</form>
-</div>
-
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">Home</a>
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+   <div class="container-fluid">
+     <a class="navbar-brand text-warning">Home</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+     <button
+       class="navbar-toggler"
+       type="button"
+       data-bs-toggle="collapse"
+       data-bs-target="#navmenu"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="employerProCon.html" class="nav-link">Employee Pro/Con</a>
-            </li>
-            <li class="nav-item">
-              <a href="page2.html" class="nav-link">Employer Pro/Con</a>
-            </li>
-			<li class="nav-item">
-              <a href="Tools.html" class="nav-link">Tools</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <div class="collapse navbar-collapse" id="navmenu">
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item">
+           <a href="index.html" class="nav-link">About</a>
+         </li>
+         <li class="nav-item">
+           <a href="employerProCon.html" class="nav-link">Employer Considerations</a>
+         </li>
+         <li class="nav-item">
+           <a href="employeeProCon.html" class="nav-link">Employee Pro/Con</a>
+         </li>
+         <li class="nav-item">
+           <a href="controversies.html" class="nav-link">Controversies</a>
+         </li>
+         <li class="nav-item">
+           <a href="Tools.html" class="nav-link">Tools</a>
+         </li>
+         <li class="nav-item">
+           <a href="contact.html" class="nav-link">Contact Us</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+ 
+	<!-- Main content -->
+	<div class = "home">
+		<img class="home icon" src="images/empmon.png" alt="CCTV Camera" width="500" height="500">
+		<h1> Employee Monitoring</h1>
+		<p>Learn about all aspects of employee monitoring</p>
+		<form action="page1.html">
+			<input type="submit" value="Learn More" />
+		</form>
+	</div>
 
-<footer>
-  <div class="text-center p-3 fixed-bottom bg-secondary text-white">
-   © <span id="year">year</span> Copyright: HackstreetBoys.
-</div>
-</footer>
+	<footer>
+		<div class="text-center p-3 fixed-bottom bg-secondary text-white">© <span id="year">year</span> 
+		Copyright: HackstreetBoys.   Last Updated: <span id="lastUpdated">lastUpdated</span></div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
