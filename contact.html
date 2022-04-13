@@ -1,22 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<title>Contact Us</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="images/empmon.png">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  <link href="css/darkTheme.css" rel="stylesheet">
-<link rel="stylesheet" href="css/contact.css">
-<script src="JavaScript/functions.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<!-- REMOVE LATER -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- REMOVE LATER -->
-
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+  
+  
+  <link rel="stylesheet" href="css/contact.css">
+  
+  <link rel="icon" type="image/png" href="images/empmon.png">
+  <title>Contact Us</title>
 </head>
 <body>
+<header>
 
-<h3>Contact Form</h3>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning">Contact Us</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="employer-considerations.html" class="nav-link">Employer Considerations</a>
+        </li>
+        <li class="nav-item">
+          <a href="employeeProCon.html" class="nav-link">Employee Considerations</a>
+        </li>
+        <li class="nav-item">
+          <a href="controversies.html" class="nav-link">Controversies</a>
+        </li>
+        <li class="nav-item">
+          <a href="Tools.html" class="nav-link">Tools</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+</header>
 
 <div class="contact">
   <div style="text-align:center">
@@ -43,48 +85,12 @@
   </div>
 </div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
-  <div class="container">
-    <a href="#" class="navbar-brand">Contact Us</a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navmenu"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="employer-considerations.html" class="nav-link">Employer Considerations</a>
-        </li>
-        <li class="nav-item">
-          <a href="employeeProCon.html" class="nav-link">Employee Pro/Con</a>
-        </li>
-        <li class="nav-item">
-          <a href="controversies.html" class="nav-link">Controversies</a>
-        </li>
-        <li class="nav-item">
-          <a href="Tools.html" class="nav-link">Tools</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<footer>
-  <div class="text-center p-3 fixed-bottom bg-secondary text-white"> © <span id="year">year</span>, HackstreetBoys.</div>
+<footer >
+  <div class="text-center p-2 fixed-bottom bg-dark text-white">© <small><span id="year">year</span> Copyright: HackstreetBoys.   last updated: <span id="lastUpdated">lastUpdated</span></small></div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="JavaScript/functions.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body>
+
 </body>
 </html>
