@@ -1,14 +1,18 @@
 body {
   color: #eee;
-  background-color: #303030
+  background-color: #272727
 }
 
 #content {
   color: #eee;
-  background-color: #424242;
+  background-color: #454955;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #jumbo {
-  background-color: #329beb;
+  background-color: #D36135;
+}
+
+#pageLabel{
+  color: #D36135;
 }

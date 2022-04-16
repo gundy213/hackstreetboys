@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById("year").innerHTML = year;
 
     const updated = new Date(document.lastModified);
-    document.getElementById("lastUpdated").innerHTML = updated;
+    const updatedf = updated.getMonth()+1 + '-' + updated.getDate() + '-' + updated.getFullYear();
+     document.getElementById("lastUpdated").innerHTML = updatedf;
 
 })
