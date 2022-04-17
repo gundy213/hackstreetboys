@@ -11,6 +11,7 @@
   
   
   <link rel="stylesheet" href="css/contact.css">
+  <link href="css/skipToLink.css" rel="stylesheet">
   
   <link rel="icon" type="image/png" href="images/empmon.png">
   <title>Contact Us</title>
@@ -22,6 +23,7 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand text-warning">Contact Us</a>
+    <a class="skip" href='#contact'>Skip to content</a>
 
     <button
       class="navbar-toggler"
@@ -78,7 +80,7 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your email..">
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -88,8 +90,11 @@
 <footer >
   <div class="text-center p-2 fixed-bottom bg-dark text-white">© <small><span id="year">year</span> Copyright: HackstreetBoys.   last updated: <span id="lastUpdated">lastUpdated</span></small></div>
 </footer>
+
+
 <script src="JavaScript/functions.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JavaScript/formCheck.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body>
 
 </body>

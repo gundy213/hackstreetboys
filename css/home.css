@@ -1,11 +1,40 @@
- footer{
+ footer
+{
     padding-top: 50px;
-  }
+}
  
- .aboutSection
-	{
-	 
-	 margin-top: 800px;
-	 margin-bottom: 50px;
-	 
-	}
+.aboutSection
+{
+	
+	margin-bottom: 150px;
+	padding-top: 300px;
+	
+}
+.box 
+{
+	position: relative;
+	text-align: center;
+	color: white;
+	height: 900px;
+	overflow: hidden;
+}
+.centered 
+{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	background-color: #212529;
+	background-size: 50px 100px;
+	padding-left: 900px;
+	padding-right: 900px;
+	white-space: nowrap;
+
+}
+h1
+{
+	
+	font-size: 60px
+	
+}
