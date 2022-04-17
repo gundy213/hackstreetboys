@@ -65,13 +65,16 @@
     </div>
     <div class="col-lg-6">
       <form id="contact-us" action="validate.php" method="post">
-        <label for="fname">First Name</label>
+        <label  for="fname">First Name</label>
+        <span class="text-center" id="fnameRequired"></span>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
+        <label id="lnameLabel" for="lname">Last Name</label>
+        <span class="text-center" id="lnameRequired"></span>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="email">Email</label>
+        <label id="emailLabel" for="email">Email</label>
+        <span class="text-center" id="emailRequired"></span>
         <input type="email" id="email" name="email" placeholder="Your email..">
-        <label for="subject">Subject</label>
+        <label id="subjectLabel" for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>

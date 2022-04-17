@@ -39,6 +39,10 @@ body {
   background-color: #454955;
 }
 
-#pageLabel{
+#pageLabel {
+  color: #D36135;
+}
+
+span {
   color: #D36135;
 }
