@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -9,7 +6,6 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
 }
 
 input[type=email], select, textarea {
@@ -18,48 +14,32 @@ input[type=email], select, textarea {
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #D36135;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #fd753f;
 }
 
 /* Style the container/contact section */
 .contact {
-  margin-top: 50px;
-  border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #454955;
+  color: white;
 }
 
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+
+body {
+  background-color: #454955;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
+#pageLabel{
+  color: #D36135;
 }
