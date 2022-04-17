@@ -12,6 +12,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -26,7 +35,7 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .contact {
-  margin-top: 25px;
+  margin-top: 50px;
   border-radius: 5px;
   background-color: #ffffff;
   padding: 10px;
@@ -52,6 +61,6 @@ input[type=submit]:hover {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
