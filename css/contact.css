@@ -43,6 +43,18 @@ body {
   color: #D36135;
 }
 
-span {
+#fnameRequired {
   color: #D36135;
+}
+
+#lnameRequired {
+  color: #D36135;
+}
+
+#emailRequired{
+  color: #D36135;
+}
+
+.grecaptcha-badge { 
+  visibility: hidden; 
 }

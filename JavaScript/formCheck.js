@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
 
     // handle click on Join List button

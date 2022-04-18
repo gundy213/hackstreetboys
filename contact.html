@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
   
   
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="../css/contact.css">
   <link href="css/skipToLink.css" rel="stylesheet">
   
   <link rel="icon" type="image/png" href="images/empmon.png">
@@ -67,6 +67,7 @@
     </div>
     <div class="col-lg-6">
       <form id="contact-us" action="validate.php" method="post">
+        
         <label  for="fname">First Name</label>
         <span class="text-center" id="fnameRequired"></span>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -78,7 +79,7 @@
         <input type="email" id="email" name="email" placeholder="Your email..">
         <label id="subjectLabel" for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
-        <input class="g-recaptcha" data-sitekey="6LcVaX8fAAAAAOvhh3FAcCul3au0Pq7uGzwYqTMH" data-callback='onSubmit' data-action='submit'type="submit" value="Submit">
+        <input type="submit" value="Submit"><div class="g-recaptcha" data-sitekey="6Ld-in8fAAAAABre6MX1v7Wp4vP0xOJM1E1Bu02l"></div>
         
       </form>
     </div>
