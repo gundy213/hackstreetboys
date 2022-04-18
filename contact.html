@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" href="images/empmon.png">
   <title>Contact Us</title>
 
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  
 </head>
 <body>
 <header>
@@ -25,6 +25,7 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
   <div class="container-fluid">
     <a id="pageLabel" class="navbar-brand ">Contact Us</a>
+    <a class="skip" href='#content'>Skip to content</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,7 +57,7 @@
 
 </header>
 
-<div class="contact container-fluid my-5 py-4">
+<div id="content" class="contact container-fluid my-5 py-4">
   <div class="text-center">
     <h2>Contact Us</h2>
     <p>Swing by for some protein cheesecake, or leave us a message:</p>
@@ -67,6 +68,7 @@
     </div>
     <div class="col-lg-6">
       <form id="contact-us" action="validate.php" method="post">
+        
         <label  for="fname">First Name</label>
         <span class="text-center" id="fnameRequired"></span>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -78,8 +80,7 @@
         <input type="email" id="email" name="email" placeholder="Your email..">
         <label id="subjectLabel" for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
-        <input class="g-recaptcha" data-sitekey="6LcVaX8fAAAAAOvhh3FAcCul3au0Pq7uGzwYqTMH" data-callback='onSubmit' data-action='submit'type="submit" value="Submit">
-        
+        <input type="submit" value="Submit">
       </form>
     </div>
   </div>
