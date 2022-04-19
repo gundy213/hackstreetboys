@@ -10,31 +10,38 @@
 	padding-top: 300px;
 	
 }
-.box 
-{
-	position: relative;
-	text-align: center;
-	color: white;
-	height: 900px;
-	overflow: hidden;
-}
-.centered 
-{
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 30px;
-	background-color: #212529;
-	background-size: 50px 100px;
-	padding-left: 900px;
-	padding-right: 900px;
-	white-space: nowrap;
 
-}
 h1
 {
 	
 	font-size: 60px
 	
+}
+.bg
+{
+	
+	background-image: url("../images/Security-Camera-Workplace.jpg");
+	margin-top: 2%;
+	height: 100%; 
+	
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body, html
+{
+	
+	margin:0;
+	height:100%;
+	
+}
+.centered
+{
+	
+	text-align: center;
+	background-color: #212529;
+	font-size: 30px;
+	position: relative;
+	bottom: 50%;
 }
