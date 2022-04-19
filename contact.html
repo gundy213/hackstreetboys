@@ -11,9 +11,12 @@
   
   
   <link rel="stylesheet" href="css/contact.css">
+  <link href="css/skipToLink.css" rel="stylesheet">
   
   <link rel="icon" type="image/png" href="images/empmon.png">
   <title>Contact Us</title>
+
+  
 </head>
 <body>
 <header>
@@ -21,17 +24,11 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand text-warning">Contact Us</a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navmenu"
-    >
+    <a id="pageLabel" class="navbar-brand ">Contact Us</a>
+    <a class="skip" href='#content'>Skip to content</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navmenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
@@ -41,13 +38,13 @@
           <a href="employer-considerations.html" class="nav-link">Employer Considerations</a>
         </li>
         <li class="nav-item">
-          <a href="employeeProCon.html" class="nav-link">Employee Considerations</a>
+          <a href="employee-considerations.html" class="nav-link">Employee Considerations</a>
         </li>
         <li class="nav-item">
           <a href="controversies.html" class="nav-link">Controversies</a>
         </li>
         <li class="nav-item">
-          <a href="Tools.html" class="nav-link">Tools</a>
+          <a href="tools.html" class="nav-link">Tools</a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link">Contact Us</a>
@@ -60,24 +57,28 @@
 
 </header>
 
-<div class="contact">
-  <div style="text-align:center">
+<div id="content" class="contact container-fluid my-5 py-4">
+  <div class="text-center">
     <h2>Contact Us</h2>
     <p>Swing by for some protein cheesecake, or leave us a message:</p>
   </div>
   <div class="row">
-    <div class="column">
-      <img src="images/proteincheesecake.jpg" style="width:100%">
+    <div class="col-lg-6">
+      <img class="img-fluid" src="images/proteincheesecake.jpg" >
     </div>
-    <div class="column">
+    <div class="col-lg-6">
       <form id="contact-us" action="validate.php" method="post">
-        <label for="fname">First Name</label>
+        
+        <label  for="fname">First Name</label>
+        <span class="text-center" id="fnameRequired"></span>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
+        <label id="lnameLabel" for="lname">Last Name</label>
+        <span class="text-center" id="lnameRequired"></span>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="email">Email</label>
+        <label id="emailLabel" for="email">Email</label>
+        <span class="text-center" id="emailRequired"></span>
         <input type="email" id="email" name="email" placeholder="Your email..">
-        <label for="subject">Subject</label>
+        <label id="subjectLabel" for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
@@ -85,10 +86,23 @@
   </div>
 </div>
 
+<!-- Fixed Footer -->
 <footer >
-  <div class="text-center p-2 fixed-bottom bg-dark text-white">© <small><span id="year">year</span> Copyright: HackstreetBoys.   last updated: <span id="lastUpdated">lastUpdated</span></small></div>
+  <div class="container-fluid p-2 fixed-bottom bg-dark text-white">
+    <div class="row">
+      <div class="col-4">
+        <small><a href="accessibility.html">Accessibility Statement</a></small>
+      </div>
+      <div class="col-4 text-center">
+        <small>© <span id="year">year</span>, HackstreetBoys.</span></small>
+      </div>
+      <div class="col-4 text-end">
+        <small>Last Updated: <span id="lastUpdated">lastUpdated</span></small>
+      </div>
+    </div>
+  </div>
 </footer>
-
+<!-- Fixed Footer -->
 
 <script src="JavaScript/functions.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
