@@ -3,7 +3,7 @@ body {
   background-color: #272727
 }
 
-#content, #content2, #content3, #content4 {
+#content, #content2, #content3, #content4, #content5 {
   color: #eee;
   background-color: #454955;
 }
@@ -23,4 +23,8 @@ body {
 
 #icon{
   color:#272727;
+}
+
+h3{
+  color: #D36135;
 }
