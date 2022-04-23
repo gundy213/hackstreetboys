@@ -58,3 +58,12 @@ body {
 .grecaptcha-badge { 
   visibility: hidden; 
 }
+
+#accessibility{
+  background-color: #D36135;
+  border: none;
+}
+
+#icon{
+  color:#272727;
+}

@@ -1,4 +1,9 @@
+"use strict";
 
+function captchaVerify() {
+    var submitBtn = document.querySelector('#submit');
+    submitBtn.removeAttribute('disabled');
+}
 
 $(document).ready(function() {
 
