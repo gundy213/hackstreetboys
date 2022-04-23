@@ -3,10 +3,9 @@ body {
   background-color: #272727
 }
 
-#content {
+#content, #content2, #content3, #content4, #content5 {
   color: #eee;
   background-color: #454955;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #jumbo {
@@ -14,5 +13,18 @@ body {
 }
 
 #pageLabel{
+  color: #D36135;
+}
+
+#accessibility{
+  background-color: #D36135;
+  border: none;
+}
+
+#icon{
+  color:#272727;
+}
+
+h3{
   color: #D36135;
 }
