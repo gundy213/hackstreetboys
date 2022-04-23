@@ -5,7 +5,7 @@ if(!empty($_REQUEST))
 {
       //  echo '<pre>'; print_r($_REQUEST); die('END');
         $post = [
-            'secret' => '6Ld-in8fAAAAAMGD3vg20iZ8z9s2FoPuNFLYLBeG',
+            'secret' => 'REDACTED',
             'response' => $_REQUEST['g-recaptcha-response'],
         ];
         $ch = curl_init();
