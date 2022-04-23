@@ -14,6 +14,7 @@
   <link href="css/skipToLink.css" rel="stylesheet">
   
   <link rel="icon" type="image/png" href="images/empmon.png">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Contact Us</title>
 
   
@@ -78,9 +79,11 @@
         <label id="emailLabel" for="email">Email</label>
         <span class="text-center" id="emailRequired"></span>
         <input type="email" id="email" name="email" placeholder="Your email..">
-        <label id="subjectLabel" for="subject">Subject</label>
+        <label id="subjectLabel" for="subject">Subject</label>   
         <textarea id="subject" name="subject" placeholder="Write something.." maxlength="512" style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <div class="g-recaptcha" data-callback="captchaVerify" data-sitekey="6Ld-in8fAAAAABre6MX1v7Wp4vP0xOJM1E1Bu02l"></div>
+        <br/>
+        <input id="submit" type="submit" value="Submit" disabled>
       </form>
     </div>
   </div>
