@@ -7,11 +7,18 @@
 {
 	
 	margin-bottom: 15%;
-	margin-top: 5%;
-	padding-top: 5%;
+	margin-top: 10%;
+	
+	
 	
 }
-
+#scroll-about
+{
+	border-style: solid;
+	border-color: #D36135;
+	padding-top: 2%;
+	
+}
 h1
 {
 	
