@@ -2,21 +2,27 @@
 {
     padding-top: 50px;
 }
- 
+#title
+{
+	
+	background-color: #D36135;
+	margin-bottom: 1%;
+	
+}
 .aboutSection
 {
 	
-	margin-bottom: 15%;
-	margin-top: 10%;
+	margin-bottom: 30%;
+	margin-top: 20%;
 	
 	
 	
 }
-#scroll-about
+#about-content
 {
-	border-style: solid;
-	border-color: #D36135;
+	
 	padding-top: 2%;
+	background-color: #454955;
 	
 }
 h1
