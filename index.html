@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Employee Monitoring</title>
-	<link rel="icon" type="image/png" href="images/empmon.png">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/home.css">
+	
+	<meta name="keywords" content="Employee, Staff, Workplace, Monitoring, Surveillance, Controversies">
+	<meta name="description" content="A brief overview of Employee Monitoring.">
+	<meta name="author" content="Hackstreet Boys">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="css/home.css" rel="stylesheet">
 	<link href="css/skipToLink.css" rel="stylesheet">
 	<link href="css/darkTheme.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/empmon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	
 	<script src="JavaScript/functions.js"></script>
+	
+	<title>Employee Monitoring</title>
 </head>
 <body>
 
@@ -48,7 +56,7 @@
   <!-- Navbar -->
  
 	<!-- Main content -->
-<div class="bg"></div>
+<div id="content" class="bg"></div>
 	<div class="centered">
 		<h1> Employee Monitoring</h1>
 		<p>Learn about all aspects of Employee monitoring</p>
@@ -56,11 +64,15 @@
 			<i class="bi bi-chevron-right"></i> Learn More
 		</a>
 	</div>	
-	<div id="info"class="container center mb-3 pb-3">
+	<div id="scroll-about"></div>
+	<div id="info" class="container center mb-3 pb-3">
 		<div class="aboutSection">
 			<div class="row">
-				<h1 class="col-lg  text-center">About</h1>
-				<div id="scroll-about" class="col-lg-12 text-center">
+				<div id="title">
+					<h1 class="col-lg  text-center">About</h1>
+					<h2 class="text-center">A brief overview of Employee monitoring.</h2>
+				</div>
+				<div id="about-content"class="col-lg-12 text-center">
 					<p class="fs-5">
 						Employee monitoring is as it states in the name, the activity of businesses monitoring employees. There are a variety of reasons why a business would want to monitor its employees. 
 						A few examples would be to increase efficiency in the workflow of employees, to detect and prevent data breaches, and to track the amount of work an employee has done. 
@@ -73,17 +85,17 @@
 	</div>
 	
 <!-- Fixed Footer -->
-<footer >
-  <div class="container-fluid p-2 fixed-bottom bg-dark text-white">
-    <div class="row">
-      <div class="col-sm-4">
-        <small><a href="accessibility.html">Accessibility Statement</a></small>
+<footer>
+  <div class="container-fluid center p-2 fixed-bottom bg-dark text-white">
+    <div class="row d-flex align-items-center">
+      <div class="col text-start">
+        <a id="accessibility" class="btn btn-primary btn-sm" href="accessibility.html"><i id="icon" class="bi bi-question-circle"></i></a>
       </div>
-      <div class="col-sm-4 text-center">
-        <small>© <span id="year">year</span>, HackstreetBoys.</span></small>
+      <div class="col text-center">
+        <small>&copy; <span id="year">year</span>, Hackstreet Boys.</small>
       </div>
-      <div class="col-sm-4 text-end">
-        <small>Last Updated: <span id="lastUpdated">lastUpdated</span></small>
+      <div class="col text-end">
+        <small >Last Updated:<br class="d-sm-none"> <span id="lastUpdated">lastUpdated</span></small>
       </div>
     </div>
   </div>

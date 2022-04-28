@@ -2,16 +2,29 @@
 {
     padding-top: 50px;
 }
- 
+#title
+{
+	
+	background-color: #D36135;
+	margin-bottom: 1%;
+	
+}
 .aboutSection
 {
 	
-	margin-bottom: 15%;
-	margin-top: 5%;
-	padding-top: 5%;
+	margin-bottom: 30%;
+	margin-top: 20%;
+	
+	
 	
 }
-
+#about-content
+{
+	
+	padding-top: 2%;
+	background-color: #454955;
+	
+}
 h1
 {
 	
